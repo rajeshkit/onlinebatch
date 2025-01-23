@@ -12,13 +12,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserService {
+public class UserService { // Class Under Test (CUT)
 
     @Autowired
     private UsersRepository userRepository;
 
     public List<Users> getAllUsers() {
-        return userRepository.findAll();
+        return userRepository.findAll();// repository findAll -> query - in the db - list<Users>
     }
     public Users getUserByEmail(String email) {
         return userRepository.findByEmail(email);
