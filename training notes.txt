@@ -1,0 +1,1356 @@
+
+	Java Language - words, Sentences, Grammer
+		
+		public class Example{
+			public static void main(String args[]){
+				System.out.println("Hello world");
+			}
+		}
+	Language:-
+		High level language - Human Readable
+		Intermediate Language - intermediate 
+		Machine Level Language - Machines understand
+			
+		High level -> Compiler -> Intermediate code
+		Intermediate code -> Interpreter --> machine level
+			
+JDK ->        compiler, interpreter, debug, documentation
+
+
+		Words - reserved words, userdefined words
+
+		all letters must be lower case - reserved
+				
+Control Statements:-
+	1. conditional control statement
+		if
+		if else
+		if else if else
+		switch
+	2. Unconditional Control statements
+		break
+		continue
+
+	looping:-
+		for
+		while
+		do while
+
+
+	jdk - compiler,interepreter
+	jre  interpreter
+
+Solution  to the problem:-
+	write a logic or task
+	subtask or small task
+	method  -  task or logic
+	
+	1. method with no arg without return type
+	2. method with arg with return type
+	3. method with no arg without return type
+	4. method with arg with return type
+OOP:-(Object oriented approach)
+================================
+	ICICI Bank - banking process
+		problem statement -  automate the banking process
+		1. Requirement
+		2. Analysis
+		3. Designing - OOAD
+				- database diagram
+				- class disgrams
+				- use case
+				- sequence diagram
+		4. Code
+		5. Test
+		6. Deploying
+	OOP:-
+		all the things are treated 'Object'
+		object -  ralworld existing things are called
+			  object
+			physical - 
+			logical
+	Identify the Object
+	Account
+		accountNumber
+		balance
+		type
+		ifsc
+		branchName
+		accountStatus();
+		updateAccountDetails();
+		getAccountDetails();
+
+	class Account{
+		accountNumber
+		balance
+		type
+		ifsc
+		branchName
+		accountStatus();
+		updateAccountDetails();
+		getAccountDetails();
+	}
+	Customer
+		name
+		dob
+		email
+		phone 
+		address
+		updateAddress();
+		changePhone()
+		
+	Deposit
+	Withdrawl
+	Transaction
+	PersonalLoan
+		loanNumber
+		loanAmount
+		rateOfInterest
+	HousingLoan
+	CreditCard
+	DebitCard
+	Cheque
+	Each object will have 2 things:-
+	1. properties 
+	2. Behaviour
+	
+	objects -> are made from class
+
+	class is a template or blueprint from which objects are made
+	instance of class called as object
+	
+	accessmodifier nonacessmodifier class ClassName{
+		constructor
+		static block
+		member variable
+		member methods
+	}
+
+	declaring a variable:-
+	accessmodifier nonaccessmofier datatype varaibleName;
+	int age;
+	int dateOfBirth;
+	String personAccountNumber;
+
+	accessmodifer nonaccessmodifier returntype methodName(){
+		------;
+		------;
+	} 
+
+	Syntax for creating an object for a class:-
+	==========================================
+	ClassName referenceName=new ClassName();
+
+	Variable:-
+	========
+		Primitive Variable 
+		Non Primitive Variable or reference variable
+	Types of variable:-
+		1. Instance variable - global
+			A variable declared inside the class
+			outside of any method 
+		2. static variable - global
+			A variable declared inside the class
+			outside of any method with static keyword
+		3. local variable - local
+			A variable declared inside the block or
+			method it is called as local
+		
+	Inheritance
+		IS-A extends 
+			single
+			multiple 
+			Hierchial
+			Hybrid
+			multilevel
+		HAS-A (Association)
+			make an object of class into another class
+			1. Aggregarion
+			2. Composition
+
+		LandD extends Trainee
+
+		String
+		System
+		Scanner 
+
+	Array:-
+		it is going store group of similar item or elements
+		Array is fixed in size
+		Array continous memory allocation
+		Array Random access
+		
+		It invloves more no of insertion / Deletion. You have
+		to move the data physically
+
+		int[] a;//declaration non primitive int variable
+		a=new int[5];	5*32= 160
+	classes:-
+		1. Predefeined class - members variable and method
+		2. userdefined class
+	Packages:-
+		helps us to organize our code
+		it avoids naming collision
+		it will you the visibility
+
+		Identify the Object
+		ICICI Bank
+		Package name should be lower case
+		Reverse of the domain
+		www.icicibank.in
+
+
+		in.icicibank.account
+			Account.java
+		in.icicibank.card
+			CreditCard.java
+			DebitCard.java
+		in.icicibank.loan
+			PersonalLoan.java
+			HousingLoan.java
+		in.icicibank.transaction
+			Deposit.java
+			Withdrawl.java
+			Transaction.java	
+		in.icicibank.customer
+			Customer.java
+		in.icicibank.cheque
+			Cheque
+		Access Modfier:-
+		---------------
+		private
+		default
+		protected 
+		public
+		Non Access Modifier:-
+		--------------------
+		It changes the default behaviour
+			
+	Function:-
+		Function Definition
+		Function Call
+		
+		public void methodName();
+
+		public void methodName(){
+			statement;
+		}
+
+		functionname();
+
+	Constructor:-
+	===========
+		it also a similar function but it is a special fn
+		never returns any value
+		constructor name should be same as class name
+		className(){
+		
+		}		
+		constructor will be called automatically whenever
+		we create an object class
+ 
+		Types of constructor:-
+		1. Default constructor - jvm to initialize instance variable
+					 deafult value
+		2. No arg constrcutor - if the programmer adds a constructor
+					with no arg
+		3. Arg constructor 
+
+		Constructor Overloadding:-
+		Constructor Chaining
+		Inheritance with constructor
+			
+	final:-
+		1. before variable - constant
+		2. before method - 
+		3. before class
+
+	Exception Handing:-
+		Syntax Error
+		Error - JVM Error outofmemoryerror, virtual machine
+		Exception - During java program execution(Runtime) some abnormal
+			    condition get created by the JVM	
+
+		try{
+			anticipating a line possible to create exception
+		}
+		catch(typeofexception referencevariable){
+			handler code
+		}
+	Custom or user defined exceptions Exceptions:-	
+	=============================================
+
+	Thread:-
+	-------
+		1. Extending Thread
+		2. implementing runnable
+	
+	Arrays:-
+		Stores group of similar types. size is fixed
+
+		primitive type
+		reference type or non primitive type 
+	Collection:-	
+		collection used store group of objects 
+		Collection cannot store primitive values
+		ArrayList  -  one of the collection classes
+		Warpper classes:-
+			byte            Byte 
+			short		Short
+			int		Integer
+			long		Long
+			float		Float
+			double		Double
+			char		Character
+			boolean		Boolean
+		Boxing - converting primitive type to a reference type using 
+			 wrapper classes 
+		UnBoxing - converting reference type to primitive type using 
+			 wrapper classes
+		AutoBoxing
+		AutoUnboxing 
+		
+	Generics:- 
+
+	Java8 Features:-
+		Till java 1.7 an interface can have only abstract methods
+		From java 1.8 onwards u can create implemented methods inside interface
+		default method
+		static method
+		Functional interface
+			An interface has only one abstract method. That interface called
+			as Functional interface
+			public interface Function<T, R> {
+				R apply(T t);
+			}
+
+			Function<String,Float> f;
+			public interface Function<String, Float> {
+				Float apply(String t);
+			}
+
+			Function<Customer,Long> f;
+			public interface Function<Csutomer, Long> {
+				Long apply(Customer t);
+			}
+
+			1. Predefined Functional Inrefaces
+				Runnable
+				Comparable
+				Comparator
+				Predicate
+				Consumer
+				Supplier
+				Function
+			2. User defined Functional interface
+		Lambda expression
+			int c = a + b;
+			It is an implementation of one abstract method
+			from functional interface
+			
+			Rules for writing lambda expression
+			1. Remove annotations
+			2. Remove the access modifier / non acess modifier
+			3. Remove the method return type
+			4. Remove the method name
+			5. After the argument add lambda operator ->
+			6. lambda body has statment 
+				only one statement u can remove {}
+				Only one statement that too return statement
+				u can also remove return keyword
+			7. Remove the object creation 
+			8. if the lambda has argument then the type 
+			   of argument also u can remove
+			   if the lamda only one arg remove the arg brackets
+			
+		Method Reference
+		Stream API
+		Date and Time API
+		
+		@FunctionalInterface
+		public interface Function<T, R> {
+			R apply(T t);
+		}	
+
+		Function<Integer,String>
+
+		@FunctionalInterface
+		public interface Function<Integer, String> {
+			String apply(Integer t);
+		}	
+
+		Function<Integer,String> f=e-> "Hello"+e;
+		String result = f.apply(454);
+		System.out.println(result);
+
+	Stream API:-
+		Java 8 introduced the Stream API, revolutionizing the way we process collections in Java.
+		Streams provide a concise and expressive way to perform bulk operations on data, 
+		enabling functional-style programming paradigms. 
+		source - array, collection
+		Intermediate Operation - 
+		terminal Operation
+
+	Java Application Types:-
+		1. console based application - J2SE
+
+		2. Window based application - swings / applet -  J2SE
+
+		3. Web Based Application - client / server - J2SE + J2EE + Web Server
+					J2EE - servlet, jsp, java beans etc
+	
+		4. Enterprise Application - client / server - J2SE + J2EE + Web Server
+						+ Application Server
+				More complex application
+		5. Mobile Application - J2ME
+		
+	
+	Spring Framework:- 
+
+	
+
+
+
+	Java Code -> Support u need 
+			JDK - javac and interpreter
+
+	Maven - Project Management tool
+
+		- standard project standard folder structure
+		- pom.xml - configuration file for maven
+		
+		Archytype - Template
+			different maven project plan
+
+		Group-Id - company ID
+		Artifact-Id - Project Name
+		version
+		package - jar / war
+
+		
+		
+		Maven Lifecycle
+			Clean - already existing generated jar / war
+				will cleaned up
+			Default
+			Site - Generate an documentation for the 
+			       project	
+		Default Life cycle:
+		validate - validate the project is correct and 
+			   all necessary information is available
+		compile - compile the source code of the project
+		test - test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+		package - take the compiled code and package 
+			it in its distributable format, such as a JAR.
+			.jar will bw available in the project folder
+		verify - run any checks on results of integration tests to ensure quality criteria are met
+		install - install the package into the local repository, 
+			  for use as a dependency in other projects 
+			  locally
+		deploy - done in the build environment, 
+			copies the final package to the 
+			remote repository for sharing with 
+			other developers and projects.
+
+	Phases		Goal		Plugins
+	validate	validate	maven-validate-plugin
+	compile		Compile		maven-compiler-plugin
+	test		test		maven-surefire-plugin
+	package		package		maven-package-plugin
+	verify		verify	
+	install		install		maven-install-plugin
+	deploy		deploy		maven-deploy-plugin
+
+
+
+
+
+
+	
+	Spring Framework:
+		Spring is one of the most popular frameworks for 
+		Java enterprise edition. 
+		Developers all over the world use Spring for 
+		developing reliable and high-quality applications. 
+		
+		Inversion of control or IOC container
+		Dependency Injection
+		AOP - Aspect oriented programming
+		
+		IOC Container 
+			1. Bean Factory(conventional older one)		
+			2. Application Context(Latest)
+				manages the beans
+				create
+				initilzation
+				delete
+				inject - autowire
+				lifecycle
+
+		Bean Configuration file for IOC container
+		1. Xml Bean Configuration + Xml Bean Definition
+		2. Xml Bean configuration + Annotation Bean Definition
+			@Component class is eligible 
+			for scanning and created as an bean
+			by the Application context(IOC container)
+		3. Java Bean Configuration 
+			@Bean
+			@Component - stereotype annotation
+
+	Dependency Injectection 2 ways
+		1. Setter based injection
+		2. constructor injection
+		
+	Types of Autowiring:-
+		1. byName - setter based injection
+		2. byType - setter based injection
+		3. constructor - constructor based injection
+		4. none
+		5. auto-detect (deprecated)
+			byType	     byName
+		private BankService bankSerice;
+@Component("obj1")
+class Demo{
+}
+@Component("obj2")
+class Demo1{
+}
+
+	IOCContainer
+			Demo obj1 = new Demo();
+			
+			Demo1 obj2 = new Demo1();
+
+		ac.getBean("demo",Demo.class);
+Application:-
+	Core Java - (console) console based application		
+		    Dependency - javaSE - jdk 
+	Advanced java -(Client / Server) web based application
+		    Dependency - JavaSE + j2ee
+			Web Server - can capable process 
+			the request / response
+			Apache Tomcat Server	
+			glashfish
+			jetty
+			Httpd
+			XAMP
+			
+	Spring Framework -(Client / Server) Enterprise Application
+		    Dependency - jdk + j2ee + spring 
+
+	Spring Boot - (Client / Server) Enterprise Application			
+		      Microservice
+		    Dependency - jdk + j2ee + spring Boot
+	Servlet - it is a java code but it can capable of 
+		  handling http request and responses
+Spring Web Application:-
+	Jdk version latest
+	Add dependencies
+		J2SE
+		Jakarta EE
+		Spring web mvc	
+Spring boot:-
+	1. Spring initilizer website
+	2. STS IDE to create a project
+
+	ApplicationContext ac=
+		new ClassPathXmlApplicationContext("filename");
+
+	ApplicationContext ac=
+		new AnnotationApplicationContext(ClassName.class);
+
+	Initializing Spring embedded WebApplicationContext
+	ApplicationContext ac=new WebApplicationContext();
+		Configuration -> AutoConfiguration
+		Component-Scan
+			
+		1. ByName - it takes the  varaible name with the same id
+			    any bean object is available inside IOC container.
+			    container will take the object through setter it will
+			    inject inside the class
+				ByName, no arg constructor, setter
+
+		2. ByType - it takes the type of the variable. inside the container
+			    checks the same bean object of type. then that object 
+			    gets injected through setter
+				ByType. no arg constructor, setter
+
+		3. Constructor - it will look construtor arg type then container
+				 searched the same bean of type. if it available
+				 it will inject through constructor
+					arg contructor. 
+
+		GET http://localhost:9090/postal/{postalId} 
+
+		GET http://localhost:9090/postal/1000 
+		GET http://localhost:9090/postal/1200 
+		Path - has a variable
+			static path variable
+			dynamic path variable
+	
+	@Controller - it always modelandview object. spring mvc application
+	@RestController
+		
+	Train
+		trainNumber
+		trainName
+		src
+		dst
+		noOfSeats
+
+	TrainController manages Train Resource
+		POST  - Create a Train resource
+		GET   - Get a Train Resource
+		PUT   - Update a Train resource
+		DELETE - Delete a Train Resource
+
+	Database:-
+		
+		H2 - Embedded H2 database
+		Spring Data JPA
+		Mysql - DB - mysql connector driver
+
+
+	create spring boot rest api app:-
+		
+		To connect to a database
+			-> add depedencies spring data JPA, h2 database
+			-> application.properties need to write config for db
+
+	JDBC:- (Java Database Connection)
+		1. Load the Driver
+		2. Connect to the database
+			DriverManager.getConnection(url,username,password);
+		3. create Statement or PreparedStatement
+		4. write and execute query - insert, delete, select, update query
+		manual:-
+		======
+		5. create an database
+		6. inside the database create a table
+	
+	Spring Data JPA:-
+	public interface JpaRepository{
+		public Object save(object);
+		List<Object> findAll();
+		Object findById(int id);
+		void deleteById(int id);
+	}
+	
+	https://github.com/rajeshkit/sessiondemo
+	
+	public class SimpleJpaRepositry implements JpaRepository{	
+		void save(){
+			1. Load the Driver
+			2. Connect to the database
+			DriverManager.getConnection(url,username,password);
+			3. create Statement or PreparedStatement
+			4. write and execute query - insert
+		}
+		
+		void findAll(){
+			1. Load the Driver
+			2. Connect to the database
+			DriverManager.getConnection(url,username,password);
+			3. create Statement or PreparedStatement
+			4. write and execute query - select
+		}
+		void findById(int id){
+			1. Load the Driver
+			2. Connect to the database
+			DriverManager.getConnection(url,username,password);
+			3. create Statement or PreparedStatement
+			4. write and execute query - select
+		}
+
+
+		delete query
+		void deleteById(int id){
+			1. Load the Driver
+			2. Connect to the database
+			DriverManager.getConnection(url,username,password);
+			3. create Statement or PreparedStatement
+			4. write and execute query - delete
+		}
+		
+		void save(){
+			1. Load the Driver
+			2. Connect to the database
+			DriverManager.getConnection(url,username,password);
+			3. create Statement or PreparedStatement
+			4. write and execute query - update
+		}	
+	}
+
+	Insert:-
+		@Autowired		
+		JpaRepository sjpa;
+		sjpa.save(obj);
+		sjpa.delete(46);
+		sjpa.findbyId(66);
+
+	Player - resource - Spring Rest App - Spring Boot - Entity
+		jerseyNumber		
+		name
+		teamName
+		totalRuns
+		average
+	PlayerController - will handle map the web request to method
+		POST - http://localhost:9090/players - create a player resource
+		GET - http://localhost:9090/players - get all the player resources
+		PUT - http://localhost:9090/players - update the player resource
+		DELETE - http://localhost:9090/players - delete a player resource
+	PlayerRepository
+		save(playerobj) -
+		findAll() - spring data jpa -> SELECT * FROM player;
+		save(playerobj) - INSERT INTO player VALUES()
+		delete(playerobj) - DELETE FROM player WHERE id=3;
+
+		findPlayerByTeamName('INDIA') -> 
+				SELECT * FROM player WHERE teamName='INDIA';
+
+	Spring data jpa quesry generation types:
+		1. method name
+			List<User> findByEmailAddressAndLastname(String emailAddress, String lastname);
+			List<Player> findPlayerByTeamName(String teamName);
+
+		2. @Query Annotation
+		3. @NativeQuery
+		Partipants has to reasearch on 
+			JPQL vs SQL
+		 
+	spaint
+
+	Adding Service Layer
+	Lombok Framework - 
+		Install lombok inside the IDE (STS)
+	API Documentation
+	Spring Boot Features
+
+	WebServices:-
+		SOAP Webservice - xml format - wsdl
+			- strict syntax
+			- process the xml is also difficult
+		Rest Webservice
+			- different data format (media type)
+				plain / html / json / xml
+	RestFull API:-
+	=============
+	One of the that we can implement web services
+
+	REST is an acronym for REpresentational State Transfer 
+	and an architectural style 
+	for distributed hypermedia systems.
+			(JSON | XML | Text | HTML)
+
+	Rest - Manages the resources(state)
+
+			Data 
+		User ---------------->	ATM 
+
+	REST architectural style:-
+	=========================
+	1. Uniform Resources Identifier
+		Noun
+		create a resource(state)
+		getting all resources(state)
+		get resource by id(state)
+		delete a resource(state)
+		update a resource(state)
+
+		Book - State or resource
+			create book resource
+			get all the book resource
+			get book resource by isbn
+			delete a book resource
+			update a book resource
+		
+		POST http://localhost:9090/book-api/books
+		GET  http://localhost:9090/book-api/books
+		GET  http://localhost:9090/book-api/books/{isbn}
+		DELETE http://localhost:9090/book-api/books
+		UPDATE http://localhost:9090/book-api/books
+		=============================
+		POST http://localhost:9393/api/users
+		DELETE http://localhost:9393/api/users/{id}
+		GET http://localhost:9393/api/users
+		GET http://localhost:9393/api/users{id}
+
+		POST	http://localhost:9090/laptop-api/laptops
+		GET	http://localhost:9090/laptop-api/laptops
+		GET	http://localhost:9090/laptop-api/laptops/{id}
+		DELETE  http://localhost:9090/laptop-api/laptops
+		UPDATE  http://localhost:9090/laptop-api/laptops
+	2. Client / Server
+	3. Stateless
+			Rest Api - protocol HTTP - stateless
+			client ------> Server
+
+
+				samerequest   Query
+	4. Cachable 	client ------> server -----> DB
+				      (caches)
+			
+	5. Layered system
+			controll layer, service layer, repository layer		
+			data layer
+
+	//POST http://localhost:9090/player/api/players
+	//GET http://localhost:9090/player/api/players/{teamName}
+	//GET http://localhost:9090/player/api/players/{id}
+	//GET http://localhost:9090/player/api/players
+	//DELETE http://localhost:9090/player/api/players
+	//UPDATE http://localhost:9090/player/api/players
+	Swagger Documentation:-
+	======================
+	Open API -> It's an standarad and specification for API documentation
+	Swagger is library which has taken Open API specification has 
+	implemented the api documentation
+	
+	spring boot version less than 3.x.x version we were swagger dependecy
+	to generate API document
+	spring boot 3.x.x springdoc-openapi we are using dependecy for open api
+	to generate API documentation
+
+	spring doc Open-api swagger:
+	Step 1: add this dependency to project pom.xml
+	<dependency>
+  		<groupId>org.springdoc</groupId>
+  		<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+  		<version>2.0.3</version>
+	</dependency>
+
+	http://localhost:9393/swagger-ui/index.html
+	
+	@OpenAPIDefinition(info = @Info(title = "Employees API", version = "2.0", description = "Employees Information"))
+	  @Operation(summary = "Greet a user", description = "This endpoint greets the user by name")
+    	@ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Successful greeting"),
+            @ApiResponse(responseCode = "400", description = "Bad request - Invalid name provided"),
+            @ApiResponse(responseCode = "500", description = "Internal server error")
+    	})
+	Testing:-
+		Quality Assurance - QA
+		1. Integaration - controller --> Service layer --> repo layer
+		2. Unit testing - 
+			contoller layer - xyz - unit Test class
+			test cases need to test controller layer method		
+			service layer - - junit Test class
+			test cases need to test service layer method
+			repository layer - bde
+	
+		unit test case - Junit Framework
+		
+		class Mobile{ // System Under Test class(SUT)
+			public String getInfo(){
+			  	//logic
+			}
+			public String osVersion(){
+				// logic
+			}
+			public float balance(){
+				//logic
+			}
+		}
+		Unit Testing - Junit Framework - external third party library
+				
+		Add a junit framework dependecy - pom.xml
+
+		class MobileTest{// Test Class
+			Test case - testing method annotate with @Test
+				    to test some logic is in SUT is
+				    working or not
+			@Test
+			public void testGetInfo(){ //test case method
+						   // to check Mobile SUT 		
+						   // class getInfo metod
+						   // is working fine or not
+			}
+			@Test
+			public void testOsVersion(){
+				assertion(expectedoutput,actualoutput);
+				10,20
+				expected - 30 - PASS
+				actual - 30 - FAIL
+			}
+			@Test
+			public void testBalance(){
+				
+			}
+			
+		}	
+	class UserServiceTest{
+		@Test
+		public void testGetAllUsers(){
+			UserService userService=new UserService();
+			List<Users> users=userService.getAllUsers();
+			assertEquals(5,users);
+		}
+	}
+
+	Spring boot Testing:-
+		- call the main method
+		- creating 
+	ecorp.edureka.co/tcstech/signin	
+	======================================================================
+	Monolithic Application
+		- bulky application
+		- E-Commerce Application
+			
+			- ProductManagementSystem
+			- OrderManagementSystem
+			- StockInventoryManagementSystem
+			- PaymentManagementSystem
+			- ShipementManagementSystem
+			- ReturnManagementSystem
+
+		- Luftansa
+			- customer
+			- flight
+			- route
+			- schedule
+			- book
+			- ticket
+			- cancelation
+
+
+		microservice application
+			- customer microservice
+			
+	Disadvantage
+		- longer deivery time
+		- Even one module has an error entire project will 
+		  goes down
+		- Scalability is difficult
+	Microservices Application
+			- ProductManagementSystem microservice
+			- OrderManagementSystem microservice
+			- StockInventoryManagementSystem microservice
+			- PaymentManagementSystem microservice
+			- ShipementManagementSystem microservice
+			- ReturnManagementSystem microservice	
+
+	Advantages:-
+		- Delivery of the product is faster
+		- scalability
+		- If microservice goes down the other microservice
+		  still runs
+	
+	https://github.com/rajeshkit/microservice
+	https://github.com/rajeshkit/userservice
+
+
+
+	Issues with microservice architecture:-
+	1. Service to Service communication in Microservice
+			RestTemplate - it's a class used to make rest synchronus calls
+				     - programatic approach - how to do things - steps 
+
+			FeignClient - Rest call rest synchronus calls
+				     - Declarative approach. what to do
+			WebClient - Rest call asynchronusly
+			Event Streaming - Kafka - asynchronus
+				Event-Driven Architecture
+				Event -  An action or data u want to communicate 
+				         other service
+				publisher - producer / subscriber - consumer
+				Start the zookeeper:-	
+				.\bin\windows\zookeeper-server-start.bat config/zookeeper.properties	
+				
+			Message Broker - RabitMQ - asynchronus
+			Messaging - JMS - asynchronus
+	2. Service to Service Microservice IP changes
+			Service Discovery Design Pattern
+			server / client
+			Netflix Eureka Service Registry and Discovery
+
+		Step 1: Create Eureka-Server
+			create one spring boot app
+			add eureka-server dependency
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			</dependency>
+			add @EnableEurekaServer on top of main method class
+
+			eureka-client 
+			<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			</dependency>
+			add @EnableDiscoveryClient on top of main method class
+
+			
+			Open Feign:
+				OpenFeign is a declarative REST client in the Spring ecosystem, 
+				designed to simplify the creation and management of HTTP 
+				requests in microservices.
+				Unlike RestTemplate’s programmatic approach, 
+				OpenFeign uses annotations to define request endpoints, 
+				making it more concise and readable. 
+				Key Features
+					Declarative Style with Annotations: Enables defining client interfaces with annotations, 
+					streamlining the process of creating REST clients.
+					Integrated with Spring Cloud LoadBalancer: Seamless integration with 
+					Spring Cloud’s LoadBalancer, facilitating service discovery and load balancing in microservices environments.
+					Automatic Error Decoding: Offers built-in mechanisms for error handling, and decoding HTTP error responses into exceptions or custom objects.
+	3. Mutiple instances are running how do u handle request
+			Load Balancers
+			
+	4. API Gateway
+		Add the dependency
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-gateway</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		add @EnableDiscoverClient in the main method class name
+	5. Central config for microservices
+	6. Fault tolerance - Circuit Breaker Design pattern
+
+Fullstack developement
+	Person1- Dev team + QA team + Delivery Team + Depeloyment 
+Devops:-
+	Developement Team + Operations Team(Admin)
+	
+	Dev team + QA team + Delivery Team + Depeloyment 	
+Docker:
+	docker --version
+	docker info
+	docker images - list all the images from local docker image repository	
+	docker ps -a - list all the running and stopped container 
+Web Application
+	front end - UI - HTML,CSS,JS
+	back end - Rest Api (java, nodejs, .net, python)
+
+Front-end application Devlopement:-
+
+	Html - 
+	css - cascading style sheet
+		set of style rules
+		selector{
+			style rule1,
+			style rule2,
+			style rulen
+		}
+
+		style rule -> property -> name:value
+	
+
+	Javascript:-	
+		- variable
+		- it is not a strict type language
+		- datatype
+			primitive
+				null
+				undefined
+				boolean
+				number
+				string
+				symbol – available from ES2015
+				bigint – available from ES2020
+			Non primitive / Reference types
+				Array, Object etc.,.
+
+		- console.log
+
+		- js - is not an strict type lanuagage
+		
+	for of- to interate via values
+	for in - to iterate via keys	
+
+	 let cityNames=["chennai","coimbator","Bangalore","vijayawada"];
+
+	 var person={
+            name:"Rajesh",
+            from:"Chennai",
+            email:"rajesh.kit@gmail.com",
+            phone:"9894851315"
+         }
+	
+	var personList=[
+			{
+				name:"Rajesh",
+				from:"Chennai"
+			},
+			{	
+				name:"Ajay",
+				from:"Delhi"
+			},
+			{	
+				name:"Kannan",
+				from:"jaipur"
+			},
+			{
+				name:"vjay",
+				from:"Bangalor"
+			}
+		       ];
+	
+	functions in js:-
+		function functionName(parameterslist){
+			
+		}
+
+		function show(){
+			
+		}
+
+
+	React:
+
+		component - it is a js file which contains js funtion return
+			    one html content
+	
+		Jsx - javascript and xml
+			
+			render()-> jsx - html + js
+	Destructuring:-
+	==============
+		Destructuring is the act of unpacking elements in an array or object.
+
+		1. To destructure an array in JavaScript
+			const [var1, var2, ...] = arrayName;
+			
+				const colorArr = ["red", "yellow", "blue", "green", "white", "black"];
+				const [first, second] = colorArr;
+				console.log(first, second);
+
+		2. Destructuring in Objects
+			const freeCodeCamp = {
+  				frontend: "React",
+  				backend: "Node",
+  				database: "MongoDB",
+			};
+
+			const { frontend, backend } = freeCodeCamp;
+			console.log(frontend, backend);
+
+
+			const car = {
+    				brand: 'Ford',
+    				year: 2015,
+   	 			color: 'blue',
+			}
+			let { brand, year } = car;
+			console.log( brand, year ); // returns "Ford" and "2015"
+	Spread Operator:-
+	================
+		The JavaScript spread operator (...) allows us to quickly copy all or part of an 
+		existing array or object into another array or object.	
+		*********************************************
+		// Array of users
+		const users = [
+  			{ id: 1, name: 'Ben' },
+  			{ id: 2, name: 'Leslie' },
+		]
+		const newUser = { id: 3, name: 'Ron' }
+		const updatedUsers = [...users, newUser]
+
+		console.log(users)
+		console.log(updatedUsers)
+
+		**********************************************
+		const user = {
+  				id: 3,
+  				name: 'Ron',
+		}
+
+		const updatedUser = { ...user, isLoggedIn: true }
+		console.log(updatedUser)		
+
+		**********************************************
+		const numbersOne = [1, 2, 3];
+		const numbersTwo = [4, 5, 6];
+		const numbersCombined = [...numbersOne, ...numbersTwo];
+		***********************************************
+		const myVehicle = {
+  			brand: 'Ford',
+  			model: 'Mustang',
+  			color: 'red'
+		}
+	
+		const updateMyVehicle = {
+  			type: 'car',
+  			year: 2021, 
+  			color: 'yellow'
+		}
+
+		const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+	Destructing vs spread 
+	=====================
+		Destructuring: Breaks down complex data structures into simpler parts, 
+			       such as extracting values from an object or array and 
+			       assigning them to variables.
+		Spread: Can copy the enumerable properties of an object to create a clone, 
+			or update or merge with another object.
+			
+		
+	Props 
+	=====
+		
+	React Event Handling:-
+	====================
+				
+	state:-
+	======
+
+		state and managing state URL:-
+		
+		https://srobbin01.medium.com/react-setstate-hook-a-deep-dive-into-managing-objects-arrays-d2a0fcfc5107		
+
+		state is a JavaScript object that holds data that can be used to influence the 
+		rendering of a component.
+		
+		The state allows developers to create dynamic and interactive UIs by enabling 
+		components to respond to user input, API responses, or other events.
+				
+		const [count, setCount] = useState(0);
+		
+		state with array of objects:-
+		---------------------------
+			const [users, setUsers] = useState([
+ 				{ id: 1, name: 'Alice', age: 30 },
+ 				{ id: 2, name: 'Bob', age: 24 },
+ 				{ id: 3, name: 'Charlie', age: 28 }
+			]);
+
+			const updateUserAge = (userId, newAge) => {
+ 				setUsers(users.map(user =>
+   					user.id === userId ? { ...user, age: newAge } : user
+ 				));
+			}; 
+
+	React Lifecycle:
+	===============
+		component life cycle methods online URL:- 
+			https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+		In React, components have a lifecycle that consists of different phases.		
+		Each phase has a set of lifecycle methods that are called at specific points in the component's lifecycle.
+		A component's lifecycle has three main phases: 
+			1. Mounting Phase
+				The mounting phase refers to the period when a component is being created and inserted into the DOM.	
+				
+				During this phase, several lifecycle methods are invoked by React to enable 
+				the developer to configure the component, set up any necessary state 
+				or event listeners, and perform other initialization tasks.
+				
+				The mounting phase has three main lifecycle methods that are called in order:
+				1.1 The constructor() lifecycle method
+				1.2 The render() lifecycle method
+				1.3 componentDidMount() - useEffect()
+			2. Updating Phase
+				2.1 render()
+				2.2 componentDidUpdate()
+			3. Unmounting Phase.
+				3.1 componentWillUnMount()
+	React Forms:-
+		import React, { useState } from "react";
+
+		function CumbersomeForm() {
+  		const [formData, setFormData] = useState({
+    			firstName: "",
+    			lastName: "",
+    			email: "",
+   	 		address: "",
+    			// ... potentially many more individual properties
+  		});
+
+  		const handleChange = (e) => {
+    		const { name, value } = e.target;
+    			setFormData((prevState) => ({ ...prevState, [name]: value }));
+ 		 };
+
+  		return (
+    			<>
+      				<label>First Name:</label>
+      				<input
+        				type="text"
+        				name="firstName"
+        				value={formData.firstName}
+        				onChange={handleChange}
+      				/>
+      				<label>Last Name:</label>
+      				<input
+        				type="text"
+        				name="lastName"
+        				value={formData.lastName}
+        				onChange={handleChange}
+      				/>
+      				<label>Email:</label>
+      					<input
+        				type="email"
+        				name="email"
+        				value={formData.email}
+        				onChange={handleChange}
+      				/>
+      				<label>Address:</label>
+      				<input
+        				type="text"
+        				name="address"
+        				value={formData.address}
+        				onChange={handleChange}
+      				/>
+      				{/* ... potentially many more individual input fields */}
+    				</>
+  			);
+			}
+	How to install React bootstrap into the react:
+	1.npm install react-bootstrap bootstrap	
+	2. index.js u need to import on css		
+	
+	React Router:-
+
+		Install React Router:- 
+		
+		1. npm install react-router-dom
+		2. add Browswer in index.js
+			import React from 'react';
+			import ReactDOM from 'react-dom/client';
+			import App from './App';
+			import { BrowserRouter } from 'react-router-dom';
+
+			const root = ReactDOM.createRoot(document.getElementById('root'));
+			root.render(
+  			<React.StrictMode>
+    			<BrowserRouter>
+      				<App />
+    			</BrowserRouter>
+  			</React.StrictMode>
+			);
+						
+
+
+
+
+
+
+		 <Router>
+    			<main>
+      			<nav>
+        		<ul>
+          			<li><Link to="/">Home</Link></li>
+          			<li><Link to="/about">About</Link></li>
+          			<li><Link to="/contact">Contact</Link></li>
+        		</ul>
+      			</nav>
+
+    			<Route path="/" exact component={Home} />
+    			<Route path="/about"  component={About} />
+    			<Route path="/contact"  component={Contact} />
+    			</main>
+		</Router>
+
+	Redux:-
+	=======
+			
+	Install bootstrap and bootstrap icons:-
+	======================================		
+			
+
+
+
+	
