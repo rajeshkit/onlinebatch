@@ -1,0 +1,52 @@
+Prerequiste s/w:
+	Node js
+	npm 
+	you can create react application
+Creating an react application:-
+	
+	npx create-react-app appname
+	
+	to run react application:-
+	=========================
+	npm start
+
+	component 
+		1. class component 
+		2. functional component
+			one javascript function
+			data 
+			return one part  - UI	
+				root Component
+					|
+				|-----------------|
+			child component       component
+
+	React Routing:-
+		install the routing:-
+		npm install react-router-dom
+		
+		add BrowserRouter module inside the root component
+		<Routes>
+        	<Route path='/' Component={Home}></Route>
+        	<Route path='service' Component={Service}></Route>
+        	<Route path='product' Component={Product}>
+            		<Route path='/product/latestproduct' Component={Newproduct}></Route>
+            		<Route path='/product/topproduct' Component={Topproduct}></Route>
+        	</Route>
+        	<Route path='contactus' Component={Contactus}></Route>
+        	<Route path='*' Component={Notfound}></Route>
+      </Routes>
+
+	http://localhost:3000/users/4
+
+			Welcome:2
+				sdfsg
+				sdfsdf
+				edssfsdfsd
+		
+	react js basics
+		component
+		props
+		state
+		useContext
+

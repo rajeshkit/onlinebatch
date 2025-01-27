@@ -415,16 +415,18 @@ OOP:-(Object oriented approach)
 			JDK - javac and interpreter
 
 	Maven - Project Management tool
-
-		- standard project standard folder structure
+		- create, configure, test , update ,delivery
+		- project standard folder structure
+		- Build - jar / war
 		- pom.xml - configuration file for maven
 		
-		Archytype - Template
+		Archetype - Template
 			different maven project plan
-
+		Maven Project:-
+		
 		Group-Id - company ID
 		Artifact-Id - Project Name
-		version
+		version 
 		package - jar / war
 
 		
@@ -441,17 +443,18 @@ OOP:-(Object oriented approach)
 		compile - compile the source code of the project
 		test - test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
 		package - take the compiled code and package 
-			it in its distributable format, such as a JAR.
+			it in its distributable format, such as a JAR / WAR.
 			.jar will bw available in the project folder
 		verify - run any checks on results of integration tests to ensure quality criteria are met
 		install - install the package into the local repository, 
 			  for use as a dependency in other projects 
-			  locally
+			  locally(.m2 folder - local repo)
 		deploy - done in the build environment, 
 			copies the final package to the 
 			remote repository for sharing with 
 			other developers and projects.
-
+			generated jar file will be there in mvnrepository(remote repo)
+	Default Lifecycle has Pahses
 	Phases		Goal		Plugins
 	validate	validate	maven-validate-plugin
 	compile		Compile		maven-compiler-plugin
@@ -890,9 +893,66 @@ Spring boot:-
 	Spring boot Testing:-
 		- call the main method
 		- creating 
-	ecorp.edureka.co/tcstech/signin	
-	======================================================================
-	Monolithic Application
+
+
+	git
+		version control system
+		Working copy
+		Staging area
+		git commit area
+		git commands:-
+			git init - initilaize the empty .git. git started tracking 
+				   the changes
+			git status - it going to compare working copy, staging area
+				     commit area. if there is any difference
+			git log - git commit history from currenct branch
+				
+			git add - bring the changed to staging area
+			
+			git commit - bring the changes staging area to commit area
+
+			git branch  - list the branches. * indiciates the current branch
+			
+			git branch branchaname - create a new branch name
+		
+			git checkout branchname - to change one branch to other branch
+			
+	Sonarqube:-
+		Analyze the code.
+		code is clean
+		install sonarqube server - java 17 or 21
+		once sonarqube server
+		by default will be ruuning on http://localhost:9000
+		default username and password admin admin
+
+		create a project inside the sonarqube server
+		mvn clean verify sonar:sonar -Dsonar.projectKey=userservicesonarproject -Dsonar.projectName='userservicesonarproject' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_351c6c29760a242275e4abaa25880fedd1ea11a8
+	===
+	Jenkins:-
+			Jenkins is an automation server to automate the ci/cd pipeline
+			ci/cd pipeline has stages and steps
+			Jenkins 
+			1. pull the pushed code (updatedcode) from the scm(github)
+				jenkins used git pull command(we need to configure git also)
+			2. generate a build - maven (we need to configure the maven)
+			3. jenkins has to deploy the jar inside the server(vm / container)
+			
+			jenkins client / server architecture
+			plugin - used to integrate tools(maven,git,sonarqube,docker) to the jenkins server
+			
+			How to install the jenkins:-
+			1. jenkins.exe - server starts at the port 9000
+			2. jenkins.war - start the jenkins server
+
+		Prerequiste:-
+		------------
+			1. go to managejenkins-> tools -> configure git
+			2. maven - configure maven
+			3. create a jenkins project - pipeline project
+				
+			
+===========================================================================================================
+	MonMolithic Application
 		- bulky application
 		- E-Commerce Application
 			
@@ -1017,10 +1077,38 @@ Devops:-
 	
 	Dev team + QA team + Delivery Team + Depeloyment 	
 Docker:
+	take ur application  + dockerize ur application + can be run inside docker env 
+	
 	docker --version
 	docker info
 	docker images - list all the images from local docker image repository	
 	docker ps -a - list all the running and stopped container 
+	docker image:-
+		docker build -t --imagename -f Dockerfile pathofthefile
+	docker container:-
+		docker run:-
+		==========
+		docker run --name --containername -p hostport:containerport imagename
+		list the containers
+		===================
+		docker ps -a
+
+		command to delete a container:-
+		docker rm containeridorcotainername;
+		
+		$ docker run --name test-mysql -e MYSQL_ROOT_PASSWORD=strong_password -d mysql
+		
+		containerize mysql database and run that in container:-
+		========================================================
+			install mysql.exe
+			root password
+			port: 3306	
+			databasename		
+
+
+
+
+
 Web Application
 	front end - UI - HTML,CSS,JS
 	back end - Rest Api (java, nodejs, .net, python)
